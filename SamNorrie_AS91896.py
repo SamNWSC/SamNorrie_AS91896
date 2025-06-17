@@ -1,3 +1,4 @@
+import math
 # Index of drivers names, team and base elo
 driver_index = {
     "lando norris": {
@@ -185,7 +186,7 @@ while True:
                 rvp = team_rvps.get(team, 100)
                 driver_elo = info["elo"]
                 
-                driver_race_elo = driver_elo * ((rvp/100) ** 10)
+                driver_race_elo = driver_elo * ((rvp/100) ** 60)
                 print(driver.title(), driver_race_elo)
         except ValueError:
             print("Please enter a valid number (e.g. 96.5).")
