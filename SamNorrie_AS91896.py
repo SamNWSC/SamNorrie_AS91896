@@ -167,7 +167,7 @@ while True:
             kicksauber_away_from_fast_team = kicksauber_performance_percent - 100
             kicksauber_rvp = 100 - kicksauber_away_from_fast_team
             print("Kick Sauber's RVP (performance compared to fastest team) is: {:.2f}%".format(kicksauber_rvp))
-
+            # Stores RVPs
             team_rvps = {
                 "Mclaren": mclaren_rvp,
                 "Ferrari": ferrari_rvp,
@@ -192,14 +192,17 @@ while True:
                 driver_race_elos.append((driver.title(), driver_race_elo))
             driver_race_elos.sort(key=lambda x: x[1], reverse=True)
             print("\nExpected Race Results based on Race Elo \n")
+            # Prints all dirver elos in order 
             for driver, elo in driver_race_elos:
                 print("{}: {:.0f}".format(driver, elo))
+        # Stops code if there is a wrong value
         except ValueError:
             print("Please enter a valid number (e.g. 101).")
+    # Quit function 
     elif reason_of_run == "quit":
         print("Thank you for using this program!")
         break
-
+    #For cases that do not algin with any of the options 
     else:
         print("Invalid option. Please try again.")
     
