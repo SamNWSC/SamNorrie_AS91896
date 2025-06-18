@@ -181,13 +181,19 @@ while True:
                 "Kick Sauber": kicksauber_rvp,
             }
             #Update the drivers base elo for their ELO in the race that is simulated 
+            driver_race_elos = []
             for driver, info in driver_index.items():
                 team = info["team"]
                 rvp = team_rvps.get(team, 100)
                 driver_elo = info["elo"]
-                
+             #Makes driver race elo which is a combination of the cars performance and the drivers skill 
                 driver_race_elo = driver_elo * ((rvp/100) ** 60)
-                print(driver.title(), driver_race_elo)
+             #Sorts the driver elo from highest to lowest     
+                driver_race_elos.append((driver.title(), driver_race_elo))
+            driver_race_elos.sort(key=lambda x: x[1], reverse=True)
+            print("\nExpected Race Results based on Race Elo \n")
+            for driver, elo in driver_race_elos:
+                print("{}: {:.0f}".format(driver, elo))
         except ValueError:
             print("Please enter a valid number (e.g. 96.5).")
     elif reason_of_run == "quit":
