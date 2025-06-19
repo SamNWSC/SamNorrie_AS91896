@@ -108,65 +108,129 @@ while True:
     elif reason_of_run == "simulate race":
         # Get RVP for each team which will be used to find the race elo of each driver based on their teams RVP
         try:
-            # Mclaren
-            mclaren_performance_percent = float(input("Enter Mclaren's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
-            mclaren_away_from_fast_team = mclaren_performance_percent - 100
-            mclaren_rvp = 100 - mclaren_away_from_fast_team 
-            print("Mclaren's RVP (performance compared to fastest team) is: {:.2f}%".format(mclaren_rvp))
+            player_input = False
+            
+            while player_input == False:
+                # Mclaren
+                mclaren_performance_percent = float(input("Enter Mclaren's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
+                if mclaren_performance_percent > 107: 
+                    print("This is an incorrect value")
+                elif  mclaren_performance_percent < 100: 
+                    print("This is an incorrect value")
+                else:
+                    mclaren_away_from_fast_team = mclaren_performance_percent - 100
+                    mclaren_rvp = 100 - mclaren_away_from_fast_team 
+                    print("Mclaren's RVP (performance compared to fastest team) is: {:.2f}%".format(mclaren_rvp))
+                    player_input = True
 
-            # Ferrari
-            ferrari_performance_percent = float(input("Enter Ferrari's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
-            ferrari_away_from_fast_team = ferrari_performance_percent - 100
-            ferrari_rvp = 100 - ferrari_away_from_fast_team 
-            print("Ferrari's RVP (performance compared to fastest team) is: {:.2f}%".format(ferrari_rvp))
+                # Ferrari
+                ferrari_performance_percent = float(input("Enter Ferrari's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
+                if ferrari_performance_percent > 107:
+                    print("This is an incorrect value")
+                elif ferrari_performance_percent < 100:
+                    print("This is an incorrect value")
+                else:
+                    ferrari_away_from_fast_team = ferrari_performance_percent - 100
+                    ferrari_rvp = 100 - ferrari_away_from_fast_team 
+                    print("Ferrari's RVP (performance compared to fastest team) is: {:.2f}%".format(ferrari_rvp))
+                    player_input = True 
 
-            # Red Bull
-            redbull_performance_percent = float(input("Enter Red Bull's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
-            redbull_away_from_fast_team = redbull_performance_percent - 100
-            redbull_rvp = 100 - redbull_away_from_fast_team 
-            print("Red Bull's RVP (performance compared to fastest team) is: {:.2f}%".format(redbull_rvp))
+                # Red Bull     
+                redbull_performance_percent = float(input("Enter Red Bull's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
+                if redbull_performance_percent > 107: 
+                    print("This is an incorrect value")
+                elif redbull_performance_percent < 100:
+                    print("This is an incorrect value")
+                else:
+                    redbull_away_from_fast_team = redbull_performance_percent - 100
+                    redbull_rvp = 100 - redbull_away_from_fast_team 
+                    print("Red Bull's RVP (performance compared to fastest team) is: {:.2f}%".format(redbull_rvp))
+                    player_input = True
 
-            # Mercedes
-            mercedes_performance_percent = float(input("Enter Mercedes's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
-            mercedes_away_from_fast_team = mercedes_performance_percent - 100
-            mercedes_rvp = 100 - mercedes_away_from_fast_team 
-            print("Mercedes's RVP (performance compared to fastest team) is: {:.2f}%".format(mercedes_rvp))
+                # Mercedes
+                mercedes_performance_percent = float(input("Enter Mercedes's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
+                if mercedes_performance_percent > 107:
+                    print("This is an incorrect value")
+                elif mercedes_performance_percent < 100:
+                    print("This is an incorrect value")
+                else:
+                    mercedes_away_from_fast_team = mercedes_performance_percent - 100
+                    mercedes_rvp = 100 - mercedes_away_from_fast_team 
+                    print("Mercedes's RVP (performance compared to fastest team) is: {:.2f}%".format(mercedes_rvp))
+                    player_input = True 
 
-            # Aston Martin
-            astonmartin_performance_percent = float(input("Enter Aston Martin's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
-            astonmartin_away_from_fast_team = astonmartin_performance_percent - 100
-            astonmartin_rvp = 100 - astonmartin_away_from_fast_team 
-            print("Aston Martin's RVP (performance compared to fastest team) is: {:.2f}%".format(astonmartin_rvp))
 
-            # Alpine
-            alpine_performance_percent = float(input("Enter Alpine's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
-            alpine_away_from_fast_team = alpine_performance_percent - 100
-            alpine_rvp = 100 - alpine_away_from_fast_team 
-            print("Alpine's RVP (performance compared to fastest team) is: {:.2f}%".format(alpine_rvp))
+                # Aston Martin
+                astonmartin_performance_percent = float(input("Enter Aston Martin's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
+                if astonmartin_performance_percent > 107:
+                     print("This is an incorrect value")
+                elif astonmartin_performance_percent < 100: 
+                     print("This is an incorrect value")
+                else:   
+                    astonmartin_away_from_fast_team = astonmartin_performance_percent - 100
+                    astonmartin_rvp = 100 - astonmartin_away_from_fast_team 
+                    print("Aston Martin's RVP (performance compared to fastest team) is: {:.2f}%".format(astonmartin_rvp))
+                    player_input = True
 
-            # Haas
-            haas_performance_percent = float(input("Enter Haas's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
-            haas_away_from_fast_team = haas_performance_percent - 100
-            haas_rvp = 100 - haas_away_from_fast_team 
-            print("Haas's RVP (performance compared to fastest team) is: {:.2f}%".format(haas_rvp))
+                # Alpine
+                alpine_performance_percent = float(input("Enter Alpine's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
+                if alpine_performance_percent > 107:
+                    print("This is an incorrect value")
+                elif alpine_performance_percent < 100:
+                     print("This is an incorrect value")
+                else:
+                    alpine_away_from_fast_team = alpine_performance_percent - 100
+                    alpine_rvp = 100 - alpine_away_from_fast_team 
+                    print("Alpine's RVP (performance compared to fastest team) is: {:.2f}%".format(alpine_rvp))
+                    player_input = True 
 
-            # Racing Bulls
-            racingbulls_performance_percent = float(input("Enter Racing Bulls's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
-            racingbulls_away_from_fast_team = racingbulls_performance_percent - 100
-            racingbulls_rvp = 100 - racingbulls_away_from_fast_team
-            print("Racing Bulls's RVP (performance compared to fastest team) is: {:.2f}%".format(racingbulls_rvp))
+                # Haas
+                haas_performance_percent = float(input("Enter Haas's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
+                if haas_performance_percent > 107:
+                     print("This is an incorrect value")
+                elif haas_performance_percent < 100:
+                     print("This is an incorrect value")
+                else:
+                    haas_away_from_fast_team = haas_performance_percent - 100
+                    haas_rvp = 100 - haas_away_from_fast_team 
+                    print("Haas's RVP (performance compared to fastest team) is: {:.2f}%".format(haas_rvp))
+                    player_input = True 
 
-            # Williams
-            williams_performance_percent = float(input("Enter Williams's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
-            williams_away_from_fast_team = williams_performance_percent - 100
-            williams_rvp = 100 - williams_away_from_fast_team 
-            print("Williams's RVP (performance compared to fastest team) is: {:.2f}%".format(williams_rvp))
+                # Racing Bulls
+                racingbulls_performance_percent = float(input("Enter Racing Bulls's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
+                if racingbulls_performance_percent > 107:
+                     print("This is an incorrect value")
+                elif racingbulls_performance_percent < 100:
+                     print("This is an incorrect value")
+                else:
+                    racingbulls_away_from_fast_team = racingbulls_performance_percent - 100
+                    racingbulls_rvp = 100 - racingbulls_away_from_fast_team
+                    print("Racing Bulls's RVP (performance compared to fastest team) is: {:.2f}%".format(racingbulls_rvp))
+                    player_input = True 
 
-            # Kick Sauber
-            kicksauber_performance_percent = float(input("Enter Kick Sauber's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
-            kicksauber_away_from_fast_team = kicksauber_performance_percent - 100
-            kicksauber_rvp = 100 - kicksauber_away_from_fast_team
-            print("Kick Sauber's RVP (performance compared to fastest team) is: {:.2f}%".format(kicksauber_rvp))
+                # Williams
+                williams_performance_percent = float(input("Enter Williams's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
+                if williams_performance_percent > 107: 
+                     print("This is an incorrect value")
+                elif racingbulls_performance_percent < 100: 
+                     print("This is an incorrect value")
+                else:
+                    williams_away_from_fast_team = williams_performance_percent - 100
+                    williams_rvp = 100 - williams_away_from_fast_team 
+                    print("Williams's RVP (performance compared to fastest team) is: {:.2f}%".format(williams_rvp))
+                    player_input = True
+
+                # Kick Sauber
+                kicksauber_performance_percent = float(input("Enter Kick Sauber's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
+                if kicksauber_performance_percent > 107:
+                     print("This is an incorrect value")
+                elif kicksauber_performance_percent < 100:
+                     print("This is an incorrect value")
+                else: 
+                    kicksauber_away_from_fast_team = kicksauber_performance_percent - 100
+                    kicksauber_rvp = 100 - kicksauber_away_from_fast_team
+                    print("Kick Sauber's RVP (performance compared to fastest team) is: {:.2f}%".format(kicksauber_rvp))
+                    player_input = True
             # Stores RVPs
             team_rvps = {
                 "Mclaren": mclaren_rvp,
