@@ -109,61 +109,61 @@ while True:
         # Get RVP for each team which will be used to find the race elo of each driver based on their teams RVP
         try:
             # Mclaren
-            mclaren_performance_percent = float(input("Enter Mclaren's performance as a percentage of the fastest team (suggested values are from over 100 to 115): "))
+            mclaren_performance_percent = float(input("Enter Mclaren's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
             mclaren_away_from_fast_team = mclaren_performance_percent - 100
             mclaren_rvp = 100 - mclaren_away_from_fast_team 
             print("Mclaren's RVP (performance compared to fastest team) is: {:.2f}%".format(mclaren_rvp))
 
             # Ferrari
-            ferrari_performance_percent = float(input("Enter Ferrari's performance as a percentage of the fastest team (suggested values are from over 100 to 115): "))
+            ferrari_performance_percent = float(input("Enter Ferrari's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
             ferrari_away_from_fast_team = ferrari_performance_percent - 100
             ferrari_rvp = 100 - ferrari_away_from_fast_team 
             print("Ferrari's RVP (performance compared to fastest team) is: {:.2f}%".format(ferrari_rvp))
 
             # Red Bull
-            redbull_performance_percent = float(input("Enter Red Bull's performance as a percentage of the fastest team (suggested values are from over 100 to 115): "))
+            redbull_performance_percent = float(input("Enter Red Bull's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
             redbull_away_from_fast_team = redbull_performance_percent - 100
             redbull_rvp = 100 - redbull_away_from_fast_team 
             print("Red Bull's RVP (performance compared to fastest team) is: {:.2f}%".format(redbull_rvp))
 
             # Mercedes
-            mercedes_performance_percent = float(input("Enter Mercedes's performance as a percentage of the fastest team (suggested values are from over 100 to 115): "))
+            mercedes_performance_percent = float(input("Enter Mercedes's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
             mercedes_away_from_fast_team = mercedes_performance_percent - 100
             mercedes_rvp = 100 - mercedes_away_from_fast_team 
             print("Mercedes's RVP (performance compared to fastest team) is: {:.2f}%".format(mercedes_rvp))
 
             # Aston Martin
-            astonmartin_performance_percent = float(input("Enter Aston Martin's performance as a percentage of the fastest team (suggested values are from over 100 to 115): "))
+            astonmartin_performance_percent = float(input("Enter Aston Martin's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
             astonmartin_away_from_fast_team = astonmartin_performance_percent - 100
             astonmartin_rvp = 100 - astonmartin_away_from_fast_team 
             print("Aston Martin's RVP (performance compared to fastest team) is: {:.2f}%".format(astonmartin_rvp))
 
             # Alpine
-            alpine_performance_percent = float(input("Enter Alpine's performance as a percentage of the fastest team (suggested values are from over 100 to 115): "))
+            alpine_performance_percent = float(input("Enter Alpine's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
             alpine_away_from_fast_team = alpine_performance_percent - 100
             alpine_rvp = 100 - alpine_away_from_fast_team 
             print("Alpine's RVP (performance compared to fastest team) is: {:.2f}%".format(alpine_rvp))
 
             # Haas
-            haas_performance_percent = float(input("Enter Haas's performance as a percentage of the fastest team (suggested values are from over 100 to 115): "))
+            haas_performance_percent = float(input("Enter Haas's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
             haas_away_from_fast_team = haas_performance_percent - 100
             haas_rvp = 100 - haas_away_from_fast_team 
             print("Haas's RVP (performance compared to fastest team) is: {:.2f}%".format(haas_rvp))
 
             # Racing Bulls
-            racingbulls_performance_percent = float(input("Enter Racing Bulls's performance as a percentage of the fastest team (suggested values are from over 100 to 115): "))
+            racingbulls_performance_percent = float(input("Enter Racing Bulls's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
             racingbulls_away_from_fast_team = racingbulls_performance_percent - 100
             racingbulls_rvp = 100 - racingbulls_away_from_fast_team
             print("Racing Bulls's RVP (performance compared to fastest team) is: {:.2f}%".format(racingbulls_rvp))
 
             # Williams
-            williams_performance_percent = float(input("Enter Williams's performance as a percentage of the fastest team (suggested values are from over 100 to 115): "))
+            williams_performance_percent = float(input("Enter Williams's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
             williams_away_from_fast_team = williams_performance_percent - 100
             williams_rvp = 100 - williams_away_from_fast_team 
             print("Williams's RVP (performance compared to fastest team) is: {:.2f}%".format(williams_rvp))
 
             # Kick Sauber
-            kicksauber_performance_percent = float(input("Enter Kick Sauber's performance as a percentage of the fastest team (suggested values are from over 100 to 115): "))
+            kicksauber_performance_percent = float(input("Enter Kick Sauber's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximumn due to F1 regulations is 107): "))
             kicksauber_away_from_fast_team = kicksauber_performance_percent - 100
             kicksauber_rvp = 100 - kicksauber_away_from_fast_team
             print("Kick Sauber's RVP (performance compared to fastest team) is: {:.2f}%".format(kicksauber_rvp))
