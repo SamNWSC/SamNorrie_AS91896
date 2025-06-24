@@ -1,5 +1,7 @@
 import math
 # Index of drivers names, team and base elo
+
+
 driver_index = {
     "lando norris": {
         "team": "Mclaren",
@@ -21,7 +23,7 @@ driver_index = {
         "team": "Red Bull",
         "elo": 2810,
     },
-    "yuki tsundoa": {
+    "yuki tsunoda": {
         "team": "Red Bull",
         "elo": 2305,
     },
@@ -86,6 +88,7 @@ driver_index = {
 
 
 
+
 print("Hello, this is an F1 ELO system.\n")
 # Acts as a loop so that the user can do multiple functions, has a quit option for easy acess
 while True:
@@ -101,11 +104,11 @@ while True:
         print("\nCurrent ELO ratings for all F1 drivers:\n")
         for driver, info in driver_index.items():
             print("{}: {}".format(driver.title(), info['elo']))
-    
+    # Update Elo Function
     elif reason_of_run == "update elo":
         try:
             player_input = False
-            
+            # Loop until all teams have an rvp 
             while player_input == False:
                 # Mclaren
                 mclaren_performance_percent = float(input("Enter Mclaren's performance as a percentage of the fastest team (suggested values are from over 100 to 102, maximum due to F1 regulations is 107): "))
@@ -251,7 +254,7 @@ while True:
              #Sorts the driver elo from highest to lowest     
                 driver_race_elos.append((driver.title(), driver_race_elo))
             driver_race_elos.sort(key=lambda x: x[1], reverse=True)
-            print("\nExpected Race Results based on Race Elo \n")
+            
             # Prints all dirver elos in order 
             print("\nExpected Race Results based on Race Elo\n")
 
