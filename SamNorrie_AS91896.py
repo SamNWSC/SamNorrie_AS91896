@@ -9,79 +9,79 @@ driver_index = {
     },
     "oscar piastri": {
         "team": "Mclaren",
-        "elo": 2565,
+        "elo": 2530,
     },
     "charles leclerc": { 
         "team": "Ferrari", 
-        "elo": 2640,
+        "elo": 2665,
     },
     "lewis hamilton": {
         "team": "Ferrari",
-        "elo": 2480,
+        "elo": 2485,
     }, 
     "max verstappen": {
         "team": "Red Bull",
-        "elo": 2810,
+        "elo": 2780,
     },
     "yuki tsunoda": {
         "team": "Red Bull",
-        "elo": 2305,
+        "elo": 1955,
     },
     "george russell": {
         "team": "Mercedes",
-        "elo": 2525,
+        "elo": 2505,
     },
     "kimi antonelli": {
         "team": "Mercedes",
-        "elo": 1800,
+        "elo": 1715,
     },
     "fernando alonso": {
         "team": "Aston Martin",
-        "elo": 2420,
+        "elo": 2350,
     },
     "lance stroll": {
         "team": "Aston Martin",
-        "elo": 2270,
+        "elo": 2200,
     },
     "pierre gasly": {
         "team": "Alpine",
-        "elo": 2385,
+        "elo": 2280,
     },
     "franco colapinto": {
         "team": "Alpine",
-        "elo": 2060,
+        "elo": 2095,
     },
     "esteban ocon": {
         "team": "Haas",
-        "elo": 2235,
+        "elo": 2465,
     },
     "oliver bearman": {
         "team": "Haas",
-        "elo": 2095,
+        "elo": 2315,
     },
     "liam lawson": {
         "team": "Racing Bulls",
-        "elo": 1990,
+        "elo": 1945,
     },
     "isack hadjar": {
         "team": "Racing Bulls",
-        "elo": 1800,
+        "elo": 1970,
     },
     "carlos sainz": {
         "team": "Williams",
-        "elo": 2540,
+        "elo": 2360,
     },
     "alexander albon": {
         "team": "Williams",
-        "elo": 2165,
+        "elo": 2155,
     },
     "nico hulkenberg": {
         "team": "Kick Sauber",
-        "elo": 2350,
+        "elo": 2620,
     },
     "gabriel bortoleto": {
         "team": "Kick Sauber",
-        "elo": 1800,
+        "elo": 1980,
     },
 }
 
